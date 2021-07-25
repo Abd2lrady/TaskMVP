@@ -1,0 +1,6 @@
+xcassets:
+  - inputs: MVVMStructure/Resources/Assets
+    outputs:
+      - templateName: swift5
+        output: MVVMStructure/Resources/Assets/Assets.swift
+

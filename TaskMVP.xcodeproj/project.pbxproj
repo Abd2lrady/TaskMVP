@@ -74,6 +74,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4F6FDA426AD9F5A00A26147 /* Build configuration list for PBXNativeTarget "TaskMVP" */;
 			buildPhases = (
+				B4F6FDA726ADA1D900A26147 /* SwiftLint */,
+				B4F6FDA826ADA20000A26147 /* SwiftGen  */,
 				B4F6FD8C26AD9F5900A26147 /* Sources */,
 				B4F6FD8D26AD9F5900A26147 /* Frameworks */,
 				B4F6FD8E26AD9F5900A26147 /* Resources */,
@@ -131,6 +133,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4F6FDA726ADA1D900A26147 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftlint\n";
+		};
+		B4F6FDA826ADA20000A26147 /* SwiftGen  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4F6FD8C26AD9F5900A26147 /* Sources */ = {

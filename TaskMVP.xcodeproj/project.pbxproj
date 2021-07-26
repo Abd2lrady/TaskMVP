@@ -69,9 +69,9 @@
 		B4F6FD9226AD9F5900A26147 /* TaskMVP */ = {
 			isa = PBXGroup;
 			children = (
+				B4F6FDB426AE973F00A26147 /* Core */,
 				B4F6FDBD26AEA5A700A26147 /* Extentions */,
 				B4F6FDB526AE97B700A26147 /* Scenes */,
-				B4F6FDB426AE973F00A26147 /* Core */,
 				B4F6FDB126AE94AC00A26147 /* Resources */,
 				B4F6FD9E26AD9F5A00A26147 /* LaunchScreen.storyboard */,
 				B4F6FDA126AD9F5A00A26147 /* Info.plist */,
@@ -99,6 +99,7 @@
 		B4F6FDB526AE97B700A26147 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B4F6FDC826AEB9F300A26147 /* HeadLabel */,
 				B4F6FDBB26AE9B7F00A26147 /* ConsultancyVC */,
 			);
 			path = Scenes;
@@ -107,7 +108,6 @@
 		B4F6FDBB26AE9B7F00A26147 /* ConsultancyVC */ = {
 			isa = PBXGroup;
 			children = (
-				B4F6FDC826AEB9F300A26147 /* HeadLabel */,
 				B4F6FDB726AE9B5C00A26147 /* ConsultancyVC.swift */,
 				B4F6FDB826AE9B5C00A26147 /* ConsultancyVC.xib */,
 			);

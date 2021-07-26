@@ -10,6 +10,7 @@ import UIKit
 class HeadLabel: UIView {
 
     @IBOutlet private weak var contentView: UIView!
+    @IBOutlet  weak var headingLabel: UILabel!
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -21,13 +22,15 @@ class HeadLabel: UIView {
         super.init(coder: coder)
         commonInit()
     }
+    
 }
 
 extension HeadLabel {
     func commonInit() {
-        Bundle.main.loadNibNamed("HeadLabel",
-                                 owner: self)
-        self.addSubview(contentView)
-        contentView.frame = self.bounds
+        let labelView = Bundle.main.loadNibNamed("HeadLabel",
+                                                 owner: self)?.first as? UIView
+        labelView?.frame = self.bounds
+        self.addSubview(labelView ?? UIView())
+        
     }
 }

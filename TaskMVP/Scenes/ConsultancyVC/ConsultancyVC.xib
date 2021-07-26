@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsultancyVC" customModule="TaskMVP" customModuleProvider="target">
             <connections>
+                <outlet property="headerLabel" destination="zgd-oI-0sR" id="hyy-xa-OHL"/>
                 <outlet property="headerView" destination="2Vp-DW-ueO" id="2G1-UV-d5M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,14 +23,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vp-DW-ueO">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgd-oI-0sR" customClass="HeadLabel" customModule="TaskMVP" customModuleProvider="target">
-                            <rect key="frame" x="288" y="59" width="126" height="70"/>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgd-oI-0sR">
+                            <rect key="frame" x="276" y="59" width="138" height="70"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemTealColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="zgd-oI-0sR" secondAttribute="trailing" id="AlB-r0-uwJ"/>
-                        <constraint firstItem="zgd-oI-0sR" firstAttribute="width" secondItem="2Vp-DW-ueO" secondAttribute="width" multiplier="0.304348" id="SGY-KF-dMI"/>
+                        <constraint firstItem="zgd-oI-0sR" firstAttribute="width" secondItem="2Vp-DW-ueO" secondAttribute="width" multiplier="1:3" id="SGY-KF-dMI"/>
                         <constraint firstItem="zgd-oI-0sR" firstAttribute="height" secondItem="2Vp-DW-ueO" secondAttribute="height" multiplier="0.25" id="aST-Vy-yPH"/>
                     </constraints>
                 </view>

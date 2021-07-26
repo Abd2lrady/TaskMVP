@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: scene)
-        let initailView = ViewController()
+        let initailView = ConsultancyVC()
         window?.rootViewController = initailView
         window?.makeKeyAndVisible()
         

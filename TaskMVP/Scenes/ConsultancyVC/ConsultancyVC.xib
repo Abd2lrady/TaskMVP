@@ -34,14 +34,21 @@
                         <constraint firstItem="zgd-oI-0sR" firstAttribute="height" secondItem="2Vp-DW-ueO" secondAttribute="height" multiplier="0.25" id="aST-Vy-yPH"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvF-Se-5MR" customClass="CategoriesView" customModule="TaskMVP" customModuleProvider="target">
+                    <rect key="frame" x="20" y="149" width="374" height="747"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGray3Color"/>
             <constraints>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="3ka-I3-WwY"/>
+                <constraint firstItem="UvF-Se-5MR" firstAttribute="top" secondItem="zgd-oI-0sR" secondAttribute="bottom" constant="20" id="BxO-fQ-9u8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UvF-Se-5MR" secondAttribute="trailing" constant="20" id="Fdr-aQ-bS7"/>
                 <constraint firstItem="zgd-oI-0sR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="Guc-pK-LSj"/>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HvV-cf-5hN"/>
+                <constraint firstAttribute="bottom" secondItem="UvF-Se-5MR" secondAttribute="bottom" id="d5v-O4-Bew"/>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ffD-06-sPc"/>
+                <constraint firstItem="UvF-Se-5MR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="lnn-3U-2Fk"/>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="140:448" id="vjj-7L-zma"/>
             </constraints>
             <point key="canvasLocation" x="147.82608695652175" y="85.714285714285708"/>

@@ -6,21 +6,16 @@
 //
 
 import UIKit
-class AppCoordinator: Coordinatable {
-    
+class AppCoordinator {
+
     var appWindow: UIWindow
     var navController: UINavigationController
     var initialView: UIViewController
     
-    init(window: UIWindow, root: UINavigationController, initialView: UIViewController) {
+    init(window: UIWindow, root: UINavigationController,
+         initialView: UIViewController) {
         self.navController = root
         self.initialView = initialView
         self.appWindow = window
-    }
-    
-    func start() {
-        appWindow.rootViewController = navController
-        navController.pushViewController(initialView, animated: true)
-        appWindow.makeKeyAndVisible()
     }
 }

@@ -19,6 +19,10 @@
 		B4227EBA26B03D2200E9FC90 /* CategoriesAPI+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4227EB926B03D2200E9FC90 /* CategoriesAPI+TargetType.swift */; };
 		B4227EBE26B14BF600E9FC90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4227EBD26B14BF600E9FC90 /* AppCoordinator.swift */; };
 		B4227EC026B14CAB00E9FC90 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4227EBF26B14CAB00E9FC90 /* Coordinatable.swift */; };
+		B4AB279E26B1778B00DC2909 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB279D26B1778B00DC2909 /* Routable.swift */; };
+		B4AB27A026B17A7600DC2909 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB279F26B17A7600DC2909 /* Router.swift */; };
+		B4AB27A226B17B8400DC2909 /* AppCoordinator+Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A126B17B8400DC2909 /* AppCoordinator+Coordinatable.swift */; };
+		B4AB27A426B17C2000DC2909 /* Router+Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB27A326B17C2000DC2909 /* Router+Routable.swift */; };
 		B4F6FD9426AD9F5900A26147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6FD9326AD9F5900A26147 /* AppDelegate.swift */; };
 		B4F6FD9626AD9F5900A26147 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6FD9526AD9F5900A26147 /* SceneDelegate.swift */; };
 		B4F6FD9D26AD9F5A00A26147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F6FD9C26AD9F5A00A26147 /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 		B4227EB926B03D2200E9FC90 /* CategoriesAPI+TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoriesAPI+TargetType.swift"; sourceTree = "<group>"; };
 		B4227EBD26B14BF600E9FC90 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B4227EBF26B14CAB00E9FC90 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		B4AB279D26B1778B00DC2909 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		B4AB279F26B17A7600DC2909 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B4AB27A126B17B8400DC2909 /* AppCoordinator+Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator+Coordinatable.swift"; sourceTree = "<group>"; };
+		B4AB27A326B17C2000DC2909 /* Router+Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Routable.swift"; sourceTree = "<group>"; };
 		B4F6FD9026AD9F5900A26147 /* TaskMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F6FD9326AD9F5900A26147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F6FD9526AD9F5900A26147 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,9 +132,20 @@
 			isa = PBXGroup;
 			children = (
 				B4227EBD26B14BF600E9FC90 /* AppCoordinator.swift */,
+				B4AB27A126B17B8400DC2909 /* AppCoordinator+Coordinatable.swift */,
 				B4227EBF26B14CAB00E9FC90 /* Coordinatable.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B4AB279C26B1776000DC2909 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B4AB279D26B1778B00DC2909 /* Routable.swift */,
+				B4AB279F26B17A7600DC2909 /* Router.swift */,
+				B4AB27A326B17C2000DC2909 /* Router+Routable.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		B4F6FD8726AD9F5900A26147 = {
@@ -150,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F6FDB426AE973F00A26147 /* Core */,
+				B4AB279C26B1776000DC2909 /* Router */,
 				B4227EBC26B14BC400E9FC90 /* Coordinator */,
 				B4F6FDBD26AEA5A700A26147 /* Extentions */,
 				B4F6FDB126AE94AC00A26147 /* Resources */,
@@ -341,13 +361,17 @@
 				B4227EBA26B03D2200E9FC90 /* CategoriesAPI+TargetType.swift in Sources */,
 				B4227EBE26B14BF600E9FC90 /* AppCoordinator.swift in Sources */,
 				B4227EA126AFE70700E9FC90 /* CategoriesCell.swift in Sources */,
+				B4AB27A226B17B8400DC2909 /* AppCoordinator+Coordinatable.swift in Sources */,
+				B4AB279E26B1778B00DC2909 /* Routable.swift in Sources */,
 				B4227EB126B0371F00E9FC90 /* Categories.swift in Sources */,
 				B4F6FDC226AEAFFD00A26147 /* HeadLabel.swift in Sources */,
 				B4227EAE26B032B100E9FC90 /* CategoriesView+CollectionDelegates.swift in Sources */,
+				B4AB27A026B17A7600DC2909 /* Router.swift in Sources */,
 				B4227EA926AFF75000E9FC90 /* CategoriesView.swift in Sources */,
 				B4227EB526B037B400E9FC90 /* File.swift in Sources */,
 				B4227EB326B0374A00E9FC90 /* Category.swift in Sources */,
 				B4F6FDB926AE9B5C00A26147 /* ConsultancyVC.swift in Sources */,
+				B4AB27A426B17C2000DC2909 /* Router+Routable.swift in Sources */,
 				B4F6FD9426AD9F5900A26147 /* AppDelegate.swift in Sources */,
 				B4F6FD9626AD9F5900A26147 /* SceneDelegate.swift in Sources */,
 				B4227EC026B14CAB00E9FC90 /* Coordinatable.swift in Sources */,

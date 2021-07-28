@@ -24,11 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let window = window else {
             fatalError("no app window")
         }
-        let rootController = UINavigationController()
-        let initailView = ConsultancyVC()
-        let appCoordinator = AppCoordinator(window: window,
-                                            root: rootController,
-                                            initialView: initailView)
+//        let rootController = UINavigationController()
+//        let initailView = ConsultancyVC()
+        let appCoordinator = AppCoordinator(window: window)
         appCoordinator.start()
 
 //        window?.rootViewController = initailView

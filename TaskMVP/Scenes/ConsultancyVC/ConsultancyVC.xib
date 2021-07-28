@@ -23,26 +23,26 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vp-DW-ueO">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                     <subviews>
-                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgd-oI-0sR">
-                            <rect key="frame" x="276" y="59" width="138" height="70"/>
+                        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgd-oI-0sR">
+                            <rect key="frame" x="248.5" y="59" width="165.5" height="70"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemTealColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="zgd-oI-0sR" secondAttribute="trailing" id="AlB-r0-uwJ"/>
-                        <constraint firstItem="zgd-oI-0sR" firstAttribute="width" secondItem="2Vp-DW-ueO" secondAttribute="width" multiplier="1:3" id="SGY-KF-dMI"/>
+                        <constraint firstItem="zgd-oI-0sR" firstAttribute="width" secondItem="2Vp-DW-ueO" secondAttribute="width" multiplier="0.4" id="SGY-KF-dMI"/>
                         <constraint firstItem="zgd-oI-0sR" firstAttribute="height" secondItem="2Vp-DW-ueO" secondAttribute="height" multiplier="0.25" id="aST-Vy-yPH"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvF-Se-5MR" customClass="CategoriesView" customModule="TaskMVP" customModuleProvider="target">
-                    <rect key="frame" x="20" y="149" width="374" height="747"/>
+                    <rect key="frame" x="20" y="169" width="374" height="727"/>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGray3Color"/>
             <constraints>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="3ka-I3-WwY"/>
-                <constraint firstItem="UvF-Se-5MR" firstAttribute="top" secondItem="zgd-oI-0sR" secondAttribute="bottom" constant="20" id="BxO-fQ-9u8"/>
+                <constraint firstItem="UvF-Se-5MR" firstAttribute="top" secondItem="zgd-oI-0sR" secondAttribute="bottom" constant="40" id="BxO-fQ-9u8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UvF-Se-5MR" secondAttribute="trailing" constant="20" id="Fdr-aQ-bS7"/>
                 <constraint firstItem="zgd-oI-0sR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="Guc-pK-LSj"/>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HvV-cf-5hN"/>

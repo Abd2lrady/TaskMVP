@@ -20,11 +20,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new
         // (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
-        
         window = UIWindow(windowScene: scene)
+        guard let window = window else {
+            fatalError("no app window")
+        }
+        let rootController = UINavigationController()
         let initailView = ConsultancyVC()
-        window?.rootViewController = initailView
-        window?.makeKeyAndVisible()
+        let appCoordinator = AppCoordinator(window: window,
+                                            root: rootController,
+                                            initialView: initailView)
+        appCoordinator.start()
+
+//        window?.rootViewController = initailView
+//        window?.makeKeyAndVisible()
         
     }
 

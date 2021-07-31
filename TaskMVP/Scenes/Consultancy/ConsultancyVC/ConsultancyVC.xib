@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsultancyVC" customModule="TaskMVP" customModuleProvider="target">
             <connections>
+                <outlet property="categoriesCV" destination="flJ-Uf-nfx" id="AGy-hi-pDt"/>
                 <outlet property="headerLabel" destination="zgd-oI-0sR" id="hyy-xa-OHL"/>
                 <outlet property="headerView" destination="2Vp-DW-ueO" id="2G1-UV-d5M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -34,27 +35,37 @@
                         <constraint firstItem="zgd-oI-0sR" firstAttribute="height" secondItem="2Vp-DW-ueO" secondAttribute="height" multiplier="0.25" id="aST-Vy-yPH"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvF-Se-5MR" customClass="CategoriesView" customModule="TaskMVP" customModuleProvider="target">
-                    <rect key="frame" x="20" y="169" width="374" height="727"/>
-                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="flJ-Uf-nfx">
+                    <rect key="frame" x="30" y="189" width="354" height="673"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pl5-qc-vsd">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGray3Color"/>
             <constraints>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="3ka-I3-WwY"/>
-                <constraint firstItem="UvF-Se-5MR" firstAttribute="top" secondItem="zgd-oI-0sR" secondAttribute="bottom" constant="40" id="BxO-fQ-9u8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UvF-Se-5MR" secondAttribute="trailing" constant="20" id="Fdr-aQ-bS7"/>
                 <constraint firstItem="zgd-oI-0sR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="Guc-pK-LSj"/>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HvV-cf-5hN"/>
-                <constraint firstAttribute="bottom" secondItem="UvF-Se-5MR" secondAttribute="bottom" id="d5v-O4-Bew"/>
+                <constraint firstItem="flJ-Uf-nfx" firstAttribute="top" secondItem="zgd-oI-0sR" secondAttribute="bottom" constant="60" id="PX5-8M-i2m"/>
+                <constraint firstItem="flJ-Uf-nfx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Pvw-zr-fqd"/>
+                <constraint firstItem="flJ-Uf-nfx" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="-30" id="a8Y-gg-cfF"/>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ffD-06-sPc"/>
-                <constraint firstItem="UvF-Se-5MR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="lnn-3U-2Fk"/>
                 <constraint firstItem="2Vp-DW-ueO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="140:448" id="vjj-7L-zma"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="flJ-Uf-nfx" secondAttribute="bottom" id="xde-g3-A1m"/>
             </constraints>
             <point key="canvasLocation" x="147.82608695652175" y="85.714285714285708"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

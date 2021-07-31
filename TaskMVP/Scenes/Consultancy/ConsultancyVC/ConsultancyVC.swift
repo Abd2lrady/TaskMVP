@@ -9,28 +9,19 @@ import UIKit
 import Moya
 
 class ConsultancyVC: UIViewController {
-
     @IBOutlet private weak var headerView: UIView!
     @IBOutlet private weak var headerLabel: UIView!
-    var categoriesProvider = MoyaProvider<CategoriesAPI>()
+    @IBOutlet weak var categoriesCV: UICollectionView!
+    
+    var presenter: ConsultancyPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         shapeHeaderView(with: 65)
         createHeading(with: "الإستشارات")
-        
-        categoriesProvider.request(.getCategories) { result in
-            switch result {
-            case .success(let response):
-                do {
-                    let result = try JSONDecoder().decode(Categories.self, from: response.data)
-                    print(result)
-                } catch {
-                    print("error parsing")
-                }
-            case .failure:
-                print("error response")
-            }
-        }
+        setupCategoriesCV()
+        presenter = ConsultancyPresenter(with: self)
+        presenter?.viewLoaded()
     }
     
     func shapeHeaderView(with radius: Float) {
@@ -43,6 +34,5 @@ class ConsultancyVC: UIViewController {
         labelView.headingLabel.text = label
         headerLabel.addSubview(labelView)
     }
-    
     
 }

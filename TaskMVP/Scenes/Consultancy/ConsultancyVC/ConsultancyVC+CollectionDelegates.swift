@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension CategoriesView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ConsultancyVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    func initCategoriesCV() {
+    func setupCategoriesCV() {
         // loading cell nib file
         let cellNib = UINib(nibName: "CategoriesCell", bundle: .main)
         // register loaded nib file to collection view
@@ -17,9 +17,12 @@ extension CategoriesView: UICollectionViewDelegate, UICollectionViewDataSource {
         categoriesCV.backgroundColor = .clear
         categoriesCV.dataSource = self
     }
-    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+//        return 20
+        return self.presenter == nil ? 0 : presenter.categoriesCount
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -28,8 +31,8 @@ extension CategoriesView: UICollectionViewDelegate, UICollectionViewDataSource {
                                                           for: indexPath) as? CategoriesCell
         else {
             fatalError("can`t deqeue the cell")
-            
         }
+        presenter.configCategoryCell(cell: cell, for: indexPath.row)
         return cell
     }
 }

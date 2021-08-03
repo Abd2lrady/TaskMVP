@@ -8,9 +8,9 @@
 import Foundation
 import Moya
 
-extension CategoriesAPI: TargetType {
+extension CategoriesTarget: TargetType {
     var baseURL: URL {
-        guard let base = URL(string: "https://smea-pc.ibtikar.sa") else {
+        guard let base = URL(string: NetworkManager.shared.networkConfig.baseUrl) else {
             fatalError("wrong baseURL")
         }
         return base

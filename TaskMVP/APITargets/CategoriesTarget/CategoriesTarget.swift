@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CategoriesAPI {
+enum CategoriesTarget {
     case getCategories
 }

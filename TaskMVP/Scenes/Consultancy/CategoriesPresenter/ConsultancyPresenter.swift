@@ -22,14 +22,22 @@ class ConsultancyPresenter {
     
     func getCategories() {
         interactor = CategoriesInteractor()
-        interactor?.getCategories(completionHandler: { [weak self] categories in
-            guard let categories = categories else {return}
-            self?.categories = categories
-            self?.view?.categoriesLoaded()
-        })
+        interactor?.getCategories(completionHandler: {[weak self] categories in
+        guard let categories = categories else {
+                    return}
+                self?.categories = categories
+                self?.view?.categoriesLoaded()
+                })
+//            print("hello interactor")
+//            print(categories)
+//        })
+//        interactor?.getCategories(completionHandler: { [weak self] categories in
+//            guard let categories = categories else {
+//                return}
+//            self?.categories = categories
+//            self?.view?.categoriesLoaded()
+//        })
     }
-    
-   
     
     func configCategoryCell(cell: CategoryCellView, for index: Int) {
         let category = categories[index]

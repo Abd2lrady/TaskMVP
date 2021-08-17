@@ -10,9 +10,9 @@ import Moya
 
 /// Closure to be executed when a request has completed.
 typealias StatusCode = Int
-//typealias MoyaCompletion =
+// typealias MoyaCompletion =
 //    (Result<Moya.Response, MoyaError>)
-//typealias NetworkComplation<T: Codable> =
+// typealias NetworkComplation<T: Codable> =
 //    (_ result: Swift.Result<APIResponse<T>, NetworkError>, _ statusCode: StatusCode?) -> Void
 //
 class NetworkManager {

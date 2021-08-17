@@ -24,13 +24,7 @@ class CategoriesInteractor {
                 print(statusCode)
             }
         }
-        
-        
-        
-        
-        
-        
-        
+
 //        categoriesProvider.request(.getCategories) { response in
 //            switch response {
 //            case .success(let categoriesResponse):

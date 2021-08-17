@@ -20,8 +20,8 @@ class ConsultancyVC: UIViewController {
         shapeHeaderView(with: 65)
         createHeading(with: "الإستشارات")
         setupCategoriesCV()
-        presenter = ConsultancyPresenter(with: self)
-        presenter?.viewLoaded()
+//        presenter = ConsultancyPresenter(with: self)
+//        presenter?.viewLoaded()
     }
     
     func shapeHeaderView(with radius: Float) {

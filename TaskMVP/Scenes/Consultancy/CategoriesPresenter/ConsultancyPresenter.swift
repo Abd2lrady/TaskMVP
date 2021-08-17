@@ -8,8 +8,8 @@
 import Foundation
 
 class ConsultancyPresenter {
-    var view: ConsultancyView?
-    var interactor: CategoriesInteractor?
+    weak var view: ConsultancyView?
+    let interactor: CategoriesInteractor?
     var categories = [Category]()
    
     var categoriesCount: Int {
@@ -18,10 +18,10 @@ class ConsultancyPresenter {
     
     init(with view: ConsultancyView) {
         self.view = view
+        interactor = CategoriesInteractor()
     }
     
     func getCategories() {
-        interactor = CategoriesInteractor()
         interactor?.getCategories(completionHandler: {[weak self] categories in
         guard let categories = categories else {
                     return}

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol Routable: class {
+protocol Routable: AnyObject {
     func push(view: UIViewController,
               animated: Bool)
     

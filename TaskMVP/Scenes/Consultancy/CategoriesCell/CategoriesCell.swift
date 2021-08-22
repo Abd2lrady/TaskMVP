@@ -9,12 +9,22 @@ import UIKit
 
 class CategoriesCell: UICollectionViewCell {
 
-    @IBOutlet  weak var imgView: UIImageView!
-    @IBOutlet  weak var nameLabel: UILabel!
+    @IBOutlet  private weak var imgView: UIImageView!
+    @IBOutlet  private weak var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         layer.cornerRadius = 12
     }
     
+}
+
+extension CategoriesCell: CategoryCellView {
+    func setImage(with: String) {
+//        self.imgView.image = UIImage(data: data)
+    }
+    
+    func setTitle(with title: String) {
+        self.nameLabel.text = title
+    }
 }

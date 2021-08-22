@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ConsultancyView: class {
+protocol ConsultancyView: AnyObject {
     func categoriesLoaded()
 }

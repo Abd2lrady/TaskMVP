@@ -10,7 +10,7 @@ import UIKit
 class HeadLabel: UIView {
 
     @IBOutlet private weak var contentView: UIView!
-    @IBOutlet  weak var headingLabel: UILabel!
+    @IBOutlet  private weak var headingLabel: UILabel!
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -21,6 +21,15 @@ class HeadLabel: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         commonInit()
+    }
+    
+    var setHeadLabel: String {
+        get {
+            return headingLabel.text ?? ""
+        }
+        set {
+            headingLabel.text = newValue
+        }
     }
     
 }

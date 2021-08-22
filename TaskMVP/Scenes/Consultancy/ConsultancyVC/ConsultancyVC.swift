@@ -31,7 +31,8 @@ class ConsultancyVC: UIViewController {
     
     func createHeading(with label: String) {
         let labelView = HeadLabel(frame: headerLabel.bounds)
-        labelView.headingLabel.text = label
+        labelView.setHeadLabel = label
+//        labelView.headingLabel.text = label
         headerLabel.addSubview(labelView)
     }
     

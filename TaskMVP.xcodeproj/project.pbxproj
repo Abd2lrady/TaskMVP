@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B4188D7B26B2ACD100A2DC02 /* ConsultancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4188D7A26B2ACD100A2DC02 /* ConsultancyView.swift */; };
 		B4188D7D26B2ADFD00A2DC02 /* ConsultancyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4188D7C26B2ADFD00A2DC02 /* ConsultancyPresenter.swift */; };
-		B4188D8326B2B91800A2DC02 /* CatergoyCell+CatergoyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4188D8226B2B91800A2DC02 /* CatergoyCell+CatergoyCellView.swift */; };
 		B4188D8526B2B94000A2DC02 /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4188D8426B2B94000A2DC02 /* CategoryCellView.swift */; };
 		B4227EA126AFE70700E9FC90 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4227E9F26AFE70700E9FC90 /* CategoriesCell.swift */; };
 		B4227EA226AFE70700E9FC90 /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4227EA026AFE70700E9FC90 /* CategoriesCell.xib */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		B4188D7A26B2ACD100A2DC02 /* ConsultancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultancyView.swift; sourceTree = "<group>"; };
 		B4188D7C26B2ADFD00A2DC02 /* ConsultancyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultancyPresenter.swift; sourceTree = "<group>"; };
-		B4188D8226B2B91800A2DC02 /* CatergoyCell+CatergoyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatergoyCell+CatergoyCellView.swift"; sourceTree = "<group>"; };
 		B4188D8426B2B94000A2DC02 /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
 		B4227E9F26AFE70700E9FC90 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		B4227EA026AFE70700E9FC90 /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 			children = (
 				B4227E9F26AFE70700E9FC90 /* CategoriesCell.swift */,
 				B4227EA026AFE70700E9FC90 /* CategoriesCell.xib */,
-				B4188D8226B2B91800A2DC02 /* CatergoyCell+CatergoyCellView.swift */,
 			);
 			path = CategoriesCell;
 			sourceTree = "<group>";
@@ -469,7 +466,6 @@
 				B4AB27A026B17A7600DC2909 /* Router.swift in Sources */,
 				B4188D7B26B2ACD100A2DC02 /* ConsultancyView.swift in Sources */,
 				B4227EB526B037B400E9FC90 /* File.swift in Sources */,
-				B4188D8326B2B91800A2DC02 /* CatergoyCell+CatergoyCellView.swift in Sources */,
 				B4227EB326B0374A00E9FC90 /* Category.swift in Sources */,
 				B4F6FDB926AE9B5C00A26147 /* ConsultancyVC.swift in Sources */,
 				B4AB27A426B17C2000DC2909 /* Router+Routable.swift in Sources */,

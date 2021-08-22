@@ -20,8 +20,8 @@ class CategoriesInteractor {
             case .success(let response):
                 completionHandler(response.data)
             case .failure(let error):
-                print(error.errorDescription)
-                print(statusCode)
+                print(error.localizedDescription)
+                print(statusCode ?? "")
             }
         }
 

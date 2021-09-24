@@ -22,7 +22,7 @@ class ConsultancyPresenter {
     }
     
     func getCategories() {
-        interactor?.getCategories(completionHandler: {[weak self] categories in
+        interactor?.getCategories(completionHandler: {[weak self] categories, error  in
         guard let categories = categories else {
                     return}
                 self?.categories = categories

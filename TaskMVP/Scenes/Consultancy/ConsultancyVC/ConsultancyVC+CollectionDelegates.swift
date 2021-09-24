@@ -22,7 +22,9 @@ extension ConsultancyVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //        return 20
-        return self.presenter == nil ? 0 : presenter.categoriesCount
+        guard let presenter = presenter else { return 0 }
+        return presenter.categoriesCount
+//        return self.presenter == nil ? 0 : presenter.categoriesCount
     }
     
     func collectionView(_ collectionView: UICollectionView,

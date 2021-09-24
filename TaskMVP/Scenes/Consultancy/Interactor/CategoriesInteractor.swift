@@ -12,17 +12,40 @@ class CategoriesInteractor {
     
     let networkManger = NetworkManager()
 
-    var categoriesProvider = MoyaProvider<CategoriesTarget>()
+//    var categoriesProvider = MoyaProvider<CategoriesTarget>()
     
-    func getCategories(completionHandler: @escaping([Category]?) -> Void) {
-        networkManger.getCategories { (result, statusCode) in
-            switch result {
-            case .success(let response):
-                completionHandler(response.data)
-            case .failure(let error):
-                print(error.localizedDescription)
-                print(statusCode ?? "")
+    func getCategories(completionHandler: @escaping([Category]?, Error?) -> Void) {
+        networkManger.request(for: CategoriesTarget.getCategories) { response, error in
+            if let response = response {
+                if 200..<300 ~= response.statusCode {
+                    do {
+                        let apiResponse = try JSONDecoder().decode(APIResponse<[Category]>.self, from: response.data)
+                        completionHandler(apiResponse.data, nil)
+                    } catch {
+                        completionHandler(nil, NetworkError.parseError)
+                    }
+                } else {
+                    do {
+                        let clientError = try JSONDecoder().decode(NetworkError.self, from: response.data)
+                        completionHandler(nil, clientError)
+                    } catch {
+                        completionHandler(nil, NetworkError.parseError)
+                    }
+                }
+            } else {
+                if let error = error {
+                    completionHandler(nil, error)
+                }
             }
+        }
+//        networkManger.getCategories { (result, statusCode) in
+//            switch result {
+//            case .success(let response):
+//                completionHandler(response.data)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//                print(statusCode ?? "")
+//            }
         }
 
 //        categoriesProvider.request(.getCategories) { response in
@@ -40,5 +63,4 @@ class CategoriesInteractor {
 //                print("error response")
 //            }
 //        }
-    }
 }

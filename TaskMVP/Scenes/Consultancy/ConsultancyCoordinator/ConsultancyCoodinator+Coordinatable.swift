@@ -11,7 +11,7 @@ extension ConsultancyCoordinator: Coordinatable {
     func start() {
         let view = ConsultancyVC()
         view.presenter = ConsultancyPresenter(with: view)
-        view.presenter.viewLoaded()
+//        view.presenter.viewLoaded()
         router.push(view: view, animated: true)
     }
 }

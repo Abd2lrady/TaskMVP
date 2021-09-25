@@ -20,6 +20,7 @@
 		B4227EBA26B03D2200E9FC90 /* CategoriesTarget+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4227EB926B03D2200E9FC90 /* CategoriesTarget+TargetType.swift */; };
 		B4227EBE26B14BF600E9FC90 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4227EBD26B14BF600E9FC90 /* AppCoordinator.swift */; };
 		B4227EC026B14CAB00E9FC90 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4227EBF26B14CAB00E9FC90 /* Coordinatable.swift */; };
+		B42B62AB26FF6B8600B9A716 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = B42B62AA26FF6B8600B9A716 /* Toast */; };
 		B4688A2226B947CE00444029 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A2126B947CE00444029 /* APIResponse.swift */; };
 		B4688A3A26B94E5000444029 /* NetworkDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A3626B9485700444029 /* NetworkDefaults.swift */; };
 		B4688A3B26B94E5000444029 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A3726B9485700444029 /* NetworkManager.swift */; };
@@ -94,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42B62AB26FF6B8600B9A716 /* Toast in Frameworks */,
 				B4F6FDAF26AE943100A26147 /* RxMoya in Frameworks */,
 				B4F6FDAB26AE943100A26147 /* Moya in Frameworks */,
 				B4F6FDAD26AE943100A26147 /* ReactiveMoya in Frameworks */,
@@ -345,6 +347,7 @@
 				B4F6FDAA26AE943100A26147 /* Moya */,
 				B4F6FDAC26AE943100A26147 /* ReactiveMoya */,
 				B4F6FDAE26AE943100A26147 /* RxMoya */,
+				B42B62AA26FF6B8600B9A716 /* Toast */,
 			);
 			productName = TaskMVP;
 			productReference = B4F6FD9026AD9F5900A26147 /* TaskMVP.app */;
@@ -375,6 +378,7 @@
 			mainGroup = B4F6FD8726AD9F5900A26147;
 			packageReferences = (
 				B4F6FDA926AE943100A26147 /* XCRemoteSwiftPackageReference "Moya" */,
+				B42B62A926FF6B8600B9A716 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = B4F6FD9126AD9F5900A26147 /* Products */;
 			projectDirPath = "";
@@ -668,6 +672,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B42B62A926FF6B8600B9A716 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		B4F6FDA926AE943100A26147 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -679,6 +691,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B42B62AA26FF6B8600B9A716 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B42B62A926FF6B8600B9A716 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
 		B4F6FDAA26AE943100A26147 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B4F6FDA926AE943100A26147 /* XCRemoteSwiftPackageReference "Moya" */;

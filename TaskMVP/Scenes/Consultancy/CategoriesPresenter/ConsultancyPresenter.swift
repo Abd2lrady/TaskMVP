@@ -23,10 +23,15 @@ class ConsultancyPresenter {
     
     func getCategories() {
         interactor?.getCategories(completionHandler: {[weak self] categories, error  in
-        guard let categories = categories else {
-                    return}
+            if let categories = categories {
                 self?.categories = categories
                 self?.view?.categoriesLoaded()
+                self?.view?.hideLoadingIndicator()
+            }
+            if let error = error {
+                self?.view?.networkError(error: error)
+                self?.view?.hideLoadingIndicator()
+            }
                 })
 //            print("hello interactor")
 //            print(categories)
@@ -46,6 +51,7 @@ class ConsultancyPresenter {
     }
 
     func viewLoaded() {
+        view?.showLoadingIndicator()
         getCategories()
     }
 }

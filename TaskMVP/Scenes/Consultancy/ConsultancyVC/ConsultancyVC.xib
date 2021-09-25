@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsultancyVC" customModule="TaskMVP" customModuleProvider="target">
             <connections>
-                <outlet property="categoriesCV" destination="flJ-Uf-nfx" id="AGy-hi-pDt"/>
+                <outlet property="_categoriesCV" destination="flJ-Uf-nfx" id="wmJ-8g-8Iv"/>
                 <outlet property="headerLabel" destination="zgd-oI-0sR" id="hyy-xa-OHL"/>
                 <outlet property="headerView" destination="2Vp-DW-ueO" id="2G1-UV-d5M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

@@ -11,10 +11,17 @@ import Moya
 class ConsultancyVC: UIViewController {
     @IBOutlet private weak var headerView: UIView!
     @IBOutlet private weak var headerLabel: UIView!
-    @IBOutlet weak var categoriesCV: UICollectionView!
+    @IBOutlet private weak var _categoriesCV: UICollectionView!
     
     var presenter: ConsultancyPresenter!
-    
+    var categoriesCV: UICollectionView {
+        get {
+            return _categoriesCV
+        }
+        set {
+            _categoriesCV = newValue
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         shapeHeaderView(with: 65)

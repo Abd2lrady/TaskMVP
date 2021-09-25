@@ -21,7 +21,7 @@ class ConsultancyVC: UIViewController {
         createHeading(with: "الإستشارات")
         setupCategoriesCV()
 //        presenter = ConsultancyPresenter(with: self)
-//        presenter?.viewLoaded()
+        presenter?.viewLoaded()
     }
     
     func shapeHeaderView(with radius: Float) {
@@ -35,5 +35,4 @@ class ConsultancyVC: UIViewController {
 //        labelView.headingLabel.text = label
         headerLabel.addSubview(labelView)
     }
-    
 }

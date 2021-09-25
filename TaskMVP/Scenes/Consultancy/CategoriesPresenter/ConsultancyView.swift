@@ -9,4 +9,7 @@ import Foundation
 
 protocol ConsultancyView: AnyObject {
     func categoriesLoaded()
+    func networkError(error: Error)
+    func showLoadingIndicator()
+    func hideLoadingIndicator()
 }

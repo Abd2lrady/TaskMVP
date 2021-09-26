@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ConsultancyView: AnyObject {
-    var categoriesDataSource: UICollectionViewDataSource? {get set}
+    var categoriesDataSource: UICollectionViewDataSource? { get set }
     func categoriesLoaded()
     func networkError(error: Error)
     func showLoadingIndicator()

@@ -45,11 +45,11 @@ class ConsultancyPresenter {
 //        })
     }
     
-    func configCategoryCell(cell: CategoryCellView, for index: Int) {
-        let category = categories[index]
-        cell.setTitle(with: category.title)
-        cell.setImage(with: category.file?.path ?? "")
-    }
+//    func configCategoryCell(cell: CategoryCellView, for index: Int) {
+//        let category = categories[index]
+//        cell.setTitle(with: category.title)
+//        cell.setImage(with: category.file?.path ?? "")
+//    }
 
     func viewLoaded() {
         view?.showLoadingIndicator()

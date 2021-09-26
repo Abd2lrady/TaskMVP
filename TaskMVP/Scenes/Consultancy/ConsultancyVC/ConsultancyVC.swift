@@ -14,12 +14,7 @@ class ConsultancyVC: UIViewController {
     @IBOutlet private weak var _categoriesCV: UICollectionView!
     
     var presenter: ConsultancyPresenter!
-    var categoriesDataSource: UICollectionViewDataSource? {
-        didSet {
-            categoriesCV.dataSource = categoriesDataSource
-            categoriesCV.reloadData()
-        }
-    }
+    var categoriesDataSource: UICollectionViewDataSource? 
     var categoriesCV: UICollectionView {
         get {
             return _categoriesCV

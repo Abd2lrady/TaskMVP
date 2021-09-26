@@ -10,6 +10,7 @@ import Toast
 
 extension ConsultancyVC: ConsultancyView {
     func categoriesLoaded() {
+        categoriesCV.dataSource = categoriesDataSource
         categoriesCV.reloadData()
 //        hideLoadingIndicator()
     }

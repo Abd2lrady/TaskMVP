@@ -29,6 +29,7 @@
 		B4688A3D26B94E5000444029 /* StaticHeaderPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A3826B9485800444029 /* StaticHeaderPlugin.swift */; };
 		B4688A5326B953B100444029 /* NetworkManger+CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A5226B953B100444029 /* NetworkManger+CategoriesService.swift */; };
 		B47B666B2700427B00852427 /* EnviromentVaribles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B666A2700427B00852427 /* EnviromentVaribles.swift */; };
+		B47B666E270048D200852427 /* roundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B666D270048D200852427 /* roundCorners.swift */; };
 		B48ECDCA26B58C4B0011D70C /* CategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ECDC926B58C4B0011D70C /* CategoriesInteractor.swift */; };
 		B48ECDD226B59ECF0011D70C /* ConsultancyVC+ConsultancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ECDD126B59ECF0011D70C /* ConsultancyVC+ConsultancyView.swift */; };
 		B4AB279E26B1778B00DC2909 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB279D26B1778B00DC2909 /* Routable.swift */; };
@@ -78,6 +79,7 @@
 		B4688A3926B9485800444029 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B4688A5226B953B100444029 /* NetworkManger+CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManger+CategoriesService.swift"; sourceTree = "<group>"; };
 		B47B666A2700427B00852427 /* EnviromentVaribles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentVaribles.swift; sourceTree = "<group>"; };
+		B47B666D270048D200852427 /* roundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundCorners.swift; sourceTree = "<group>"; };
 		B48ECDC926B58C4B0011D70C /* CategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInteractor.swift; sourceTree = "<group>"; };
 		B48ECDD126B59ECF0011D70C /* ConsultancyVC+ConsultancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConsultancyVC+ConsultancyView.swift"; sourceTree = "<group>"; };
 		B4AB279D26B1778B00DC2909 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
@@ -201,6 +203,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		B47B666C270048AE00852427 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				B47B666D270048D200852427 /* roundCorners.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		B48ECDC626B587970011D70C /* CategoriesTarget */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +301,7 @@
 		B4F6FD9226AD9F5900A26147 /* TaskMVP */ = {
 			isa = PBXGroup;
 			children = (
+				B47B666C270048AE00852427 /* Extentions */,
 				B4D10D672700374B0098F5BE /* Configuration */,
 				B4F6FDB426AE973F00A26147 /* Core */,
 				B4227EBC26B14BC400E9FC90 /* AppCoordinator */,
@@ -492,6 +503,7 @@
 				B4227EA126AFE70700E9FC90 /* CategoriesCell.swift in Sources */,
 				B4AB27A226B17B8400DC2909 /* AppCoordinator+Coordinatable.swift in Sources */,
 				B4AB27AA26B18A8900DC2909 /* ConsultancyCoodinator+Coordinatable.swift in Sources */,
+				B47B666E270048D200852427 /* roundCorners.swift in Sources */,
 				B422B99F26FF77CC002319F3 /* ConsultancyVC+CollectionDelegates.swift in Sources */,
 				B4AB279E26B1778B00DC2909 /* Routable.swift in Sources */,
 				B4227EB126B0371F00E9FC90 /* Categories.swift in Sources */,

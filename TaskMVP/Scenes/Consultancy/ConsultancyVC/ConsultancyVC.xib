@@ -24,7 +24,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vp-DW-ueO">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                     <subviews>
-                        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgd-oI-0sR">
+                        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgd-oI-0sR" customClass="HeadLabel" customModule="TaskMVP" customModuleProvider="target">
                             <rect key="frame" x="248.5" y="59" width="165.5" height="70"/>
                         </view>
                     </subviews>

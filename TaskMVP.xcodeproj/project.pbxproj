@@ -28,6 +28,7 @@
 		B4688A3C26B94E5000444029 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A3926B9485800444029 /* NetworkError.swift */; };
 		B4688A3D26B94E5000444029 /* StaticHeaderPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A3826B9485800444029 /* StaticHeaderPlugin.swift */; };
 		B4688A5326B953B100444029 /* NetworkManger+CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4688A5226B953B100444029 /* NetworkManger+CategoriesService.swift */; };
+		B47B666B2700427B00852427 /* EnviromentVaribles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B666A2700427B00852427 /* EnviromentVaribles.swift */; };
 		B48ECDCA26B58C4B0011D70C /* CategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ECDC926B58C4B0011D70C /* CategoriesInteractor.swift */; };
 		B48ECDD226B59ECF0011D70C /* ConsultancyVC+ConsultancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ECDD126B59ECF0011D70C /* ConsultancyVC+ConsultancyView.swift */; };
 		B4AB279E26B1778B00DC2909 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB279D26B1778B00DC2909 /* Routable.swift */; };
@@ -76,6 +77,7 @@
 		B4688A3826B9485800444029 /* StaticHeaderPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHeaderPlugin.swift; sourceTree = "<group>"; };
 		B4688A3926B9485800444029 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B4688A5226B953B100444029 /* NetworkManger+CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManger+CategoriesService.swift"; sourceTree = "<group>"; };
+		B47B666A2700427B00852427 /* EnviromentVaribles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentVaribles.swift; sourceTree = "<group>"; };
 		B48ECDC926B58C4B0011D70C /* CategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInteractor.swift; sourceTree = "<group>"; };
 		B48ECDD126B59ECF0011D70C /* ConsultancyVC+ConsultancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConsultancyVC+ConsultancyView.swift"; sourceTree = "<group>"; };
 		B4AB279D26B1778B00DC2909 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				B4D10D6A2700374B0098F5BE /* Debug.xcconfig */,
 				B4D10D6B2700374B0098F5BE /* Release.xcconfig */,
 				B4D10D6C2700374B0098F5BE /* Testing.xcconfig */,
+				B47B666A2700427B00852427 /* EnviromentVaribles.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				B4688A5326B953B100444029 /* NetworkManger+CategoriesService.swift in Sources */,
 				B4F6FDC226AEAFFD00A26147 /* HeadLabel.swift in Sources */,
 				B4AB27A626B18A1E00DC2909 /* ConsultancyCoordinator.swift in Sources */,
+				B47B666B2700427B00852427 /* EnviromentVaribles.swift in Sources */,
 				B4AB27A026B17A7600DC2909 /* Router.swift in Sources */,
 				B4188D7B26B2ACD100A2DC02 /* ConsultancyView.swift in Sources */,
 				B4227EB526B037B400E9FC90 /* File.swift in Sources */,
@@ -606,6 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ENTERPRISE_DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -690,6 +695,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TESTING;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -768,6 +774,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ENTERPRISE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -930,6 +937,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

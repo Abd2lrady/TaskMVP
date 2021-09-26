@@ -10,7 +10,7 @@ import Foundation
 
 struct NetworkDefaults {
     
-    var baseUrl: String = "https://smea-pc.ibtikar.sa"
+    var baseUrl: String = baseURL
     
     static var `defaults` : NetworkDefaults {
         let instance = NetworkDefaults()

@@ -1,0 +1,13 @@
+//
+//  Enterprise.xcconfig
+//  enterpriseConfig
+//
+//  Created by Ahmad Abdulrady
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = TaskMVP
+APP_ICON = AppIcon-Enterprise
+APP_BUNDLE_IDENTIFIER = com.ibtikar.TaskMVP.enterprise
+APP_TEAM_ID = 328G43MVZQ

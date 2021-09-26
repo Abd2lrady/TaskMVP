@@ -25,6 +25,7 @@ class ConsultancyPresenter {
         interactor?.getCategories(completionHandler: {[weak self] categories, error  in
             if let categories = categories {
                 self?.categories = categories
+                self?.view?.categoriesDataSource = CategoriesDataSource(categories: categories)
                 self?.view?.categoriesLoaded()
                 self?.view?.hideLoadingIndicator()
             }

@@ -14,6 +14,12 @@ class ConsultancyVC: UIViewController {
     @IBOutlet private weak var _categoriesCV: UICollectionView!
     
     var presenter: ConsultancyPresenter!
+    var categoriesDataSource: UICollectionViewDataSource? {
+        didSet {
+            categoriesCV.dataSource = categoriesDataSource
+            categoriesCV.reloadData()
+        }
+    }
     var categoriesCV: UICollectionView {
         get {
             return _categoriesCV
@@ -32,5 +38,13 @@ class ConsultancyVC: UIViewController {
     
     override func viewDidLayoutSubviews() {
         headerView.layer.setSingleRoundedCorner(radius: 65, corner: .bottomRight)
+    }
+    
+    func setupCategoriesCV() {
+        // loading cell nib file
+        let cellNib = UINib(nibName: "CategoriesCell", bundle: .main)
+        // register loaded nib file to collection view
+        categoriesCV.register(cellNib, forCellWithReuseIdentifier: "CategoriesCell")
+        categoriesCV.backgroundColor = .clear
     }
 }
